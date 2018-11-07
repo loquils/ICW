@@ -1,0 +1,21 @@
+<%- include('_layout/header'); -%>
+
+<% for(var i=0; i<pizzas.length; i++) { %>
+    <h2>
+        <%= pizzas[i].name %>
+        <%= pizzas[i].price %>
+    </h2>
+<% } %>
+
+
+<form action="/" method="POST">
+  First name:<br>
+  <input type="text" name="firstname" value="Julien">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Usson">
+  <br><br>
+  <button type="submit">Envoyer</button>
+</form> 
+
+<%- include('_layout/footer'); -%>
